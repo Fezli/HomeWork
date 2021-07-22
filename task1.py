@@ -1,5 +1,3 @@
-name = input("Как тебя зовут?:")
-age = int(input("Сколько тебе лет?:"))
-
-print(f"Привет {name}!")
-print(f"Ого! тебе уже {age} лет!")
+my_list = [1, 2, 3, "a", "b", "c", "d", "e"]
+for i in range(len(my_list)):
+    print(type(my_list[i]))
