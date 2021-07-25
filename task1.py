@@ -1,3 +1,8 @@
-my_list = [1, 2, 3, "a", "b", "c", "d", "e"]
-for i in range(len(my_list)):
-    print(type(my_list[i]))
+def my_func(x, y):
+    if y <= 0:
+        return
+    return x / y
+
+x = int(input("Первое число"))
+y = int(input("Второе число"))
+print(my_func(x, y))

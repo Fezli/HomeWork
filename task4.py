@@ -1,14 +1,13 @@
-string_ = input("Введите желаемую строку: ")
-my_list = (string_.split(" "))
-i = 0
-n = 1
+# вариант решения с "**"
+# def my_func(x, y):
+#     return x ** y
+# print(my_func(x=int(input("Введите положительное число: ")), y=int(input("Введите отрицательное число: "))))
 
-while i < len(my_list):
-     if len(my_list[i]) > 10:
-          print(f"{n}-ое слово:{my_list[i][:10:]}")
-          i += 1
-          n += 1
-     else:
-          print(f"{n}-ое слово: {my_list[i]}")
-          i += 1
-          n += 1
+
+def my_func(x, y): # вариант решения с циклом
+    i = 1
+    while i < abs(y):
+        i += 1
+        x = x * x
+    return (1 / x)
+print(my_func(x=int(input("Введите положительное число: ")), y=int(input("Введите отрицательное число: "))))
