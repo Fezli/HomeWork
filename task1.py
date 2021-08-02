@@ -1,5 +1,3 @@
-name = input("Как тебя зовут?:")
-age = int(input("Сколько тебе лет?:"))
-
-print(f"Привет {name}!")
-print(f"Ого! тебе уже {age} лет!")
+def salary(hour, pay, prize):
+    return (hour * pay) + prize
+print(salary(8, 3500, 1000))

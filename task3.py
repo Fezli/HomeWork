@@ -1,5 +1,1 @@
-# i = int(input("Введите число:"))
-# print(i + i*11 + i*111)
-
-i = (input("Введите число:"))
-print(int(i + i) + int(i + i + i)+ int(i))
+for i in range(20, 241): print(i) if i % 20 == 0 or i % 21 == 0 else 0
